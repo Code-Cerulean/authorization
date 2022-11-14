@@ -1,0 +1,227 @@
+<style>
+
+:root {
+    --button-color: #163372;
+  }
+
+/* Overall website */
+       * {
+           margin: 0;
+           padding: 0;
+           border: 0;
+       }
+
+/* Start of Header Bar */
+       .bar {
+            width: 100%;
+            float: none;
+            background: transparent;
+            overflow: hidden;
+            position: fixed;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            line-height: 150%;
+            font-weight: bold;
+       }
+
+    /* Website Name */
+        #icon.material-symbols-outlined {
+            color: black;
+            font-size: 22px;
+            font-variation-settings:
+             'FILL' 0,
+             'wght' 400,
+             'GRAD' 0
+       }
+        .bar a {
+           float: left;
+           color: black;
+           padding-top: 14px;
+           padding-bottom: 14px;
+           padding-left: 14px;
+           cursor: default;
+           text-decoration: none; 
+           letter-spacing: 3px;
+           font-size: 17px;
+           font-weight: 600;
+           font-family: 'Roboto', sans-serif;
+           text-align: center;
+       }
+       
+    /* Dropdown Button */
+       .dropbtn {
+           background-color: transparent;
+           border-radius: 5px;
+           margin: 4px;
+           margin-bottom: 0px;
+           color: white;
+           padding: 5px 14px 13px;
+           font-size: 22px;
+           border: none;
+           cursor: default;
+           float: right;
+           position: fixed;
+           box-sizing: border-box;
+           right: 0px;
+           top: 0px;
+           transition: color 0.5s linear;
+        }
+
+   /* Dropdown Content */
+      .dropdown-content {
+           float: right;
+           position: fixed;
+           right: 45px;
+           top: 13px;
+           z-index: -1;
+           opacity: 0;
+           display: block;
+           transition: all 0.7s;
+           margin: 6px;
+           margin-top: 0px;
+           margin-right: 10px;
+      }
+      .dropdown-content a {
+           color: white;
+           padding: 12px 10px;
+           text-decoration: none;
+           display: inline;
+           text-align: center;
+           font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.1em;
+            line-height: 150%;
+            font-size: 15px;
+            font-weight: 400;
+      }
+
+   /* Hover Options */
+      .dropdown:hover  .dropbtn{
+           color: #a6a6a6;
+           cursor: pointer;
+       }
+       .dropdown:hover .dropdown-content {
+           visibility: visible;
+           z-index: 1;
+           opacity: 1;
+           transition: all 0.7s;
+      }
+      .dropdown:not(:hover) .dropdown-content {
+           z-index: -1;
+           transition: all 0.7s;
+    }
+      .dropdown-content a:hover {
+           color: #a6a6a6;
+           transition: all 0.7s;
+    } 
+
+/* End of Header Bar */    
+
+/* This adjusts the background and overall alignment of components */
+       body {
+           margin-top: 125px;
+           height: 100vh;
+           justify-content: center;
+           align-items: center;
+           background: linear-gradient(45deg, white, #273062); 
+           overflow: hidden;
+       }
+
+/* This adjusts the date and the time overall */
+       .wrapper {
+           text-align: center;
+           justify-content: center;
+           align-items: center;
+           padding: 0 250px;
+           display: flex;
+           flex-direction: column;
+       }
+
+/* This adjusts the date specifically */
+       #date {
+            font-size: 50px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            font-family: 'Karla', sans-serif;
+            font-style: italic;
+            display: inline;
+        }
+
+/* This adjusts the clock spcifically */
+       #clock {
+            font-size: 130px;
+            font-weight: 200;
+            font-family: 'Karla', sans-serif;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 820px;
+            margin: 25px;
+            text-align: center;
+            display: inline;
+            background: rgba( 255, 255, 255, 0.37 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+       }
+
+/* Start alarm set time */
+       .column {
+           display: inline;
+           margin: 5px;
+       }
+       .wrapper .content {
+           width: 100%;
+           display: inline;
+           justify-content: space-between;
+           padding: 20px 0 4px;
+       }
+       .content .column {
+           border-radius: 8px;
+           padding: 8px 3px 8px;
+           width: calc(100% / 3 - 5px);
+           height: 40px;
+       }
+       .column select {
+           outline: none;
+           border: none;
+           border-radius: 8px;
+           height: 40px;
+           width: 100px;
+           font-size: 13px;
+           font-family: 'Montserrat', sans-serif;
+           font-style: bold;
+           cursor: pointer;
+           padding: 10px 10px 10px;
+       }
+/* End alarm set time */
+
+/* This adjusts the buttons for setting and clearing alarm */
+       .wrapper button {
+           width: 197px;
+           outline: none;
+           border: none;
+           cursor: pointer;
+           color: white;
+           margin-top: 15px;
+           font-size: 15px;
+           font-family: 'Montserrat', sans-serif;
+           letter-spacing: 1px;
+           padding: 17px 0;
+           border-radius: 8px;
+           background: black;
+           display: inline;
+       }
+       .wrapper button:hover {
+           background-color: #273062;
+           color: white;
+           transition: 0.5s;
+       } 
+ </style>

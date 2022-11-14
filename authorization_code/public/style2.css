@@ -1,0 +1,185 @@
+<style>
+
+:root {
+    --button-color: #163372;
+  }
+
+/* Overall website */
+       * {
+           margin: 0;
+           padding: 0;
+           border: 0;
+       }
+
+/* Start of Header Bar */
+       .bar {
+            width: 100%;
+            float: none;
+            background: transparent;
+            overflow: hidden;
+            position: fixed;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            line-height: 150%;
+            font-weight: bold;
+       }
+
+    /* Website Name */
+       #icon.material-symbols-outlined {
+            color: black;
+            font-size: 22px;
+            font-variation-settings:
+             'FILL' 0,
+             'wght' 400,
+             'GRAD' 0
+       }
+        .bar a {
+           float: left;
+           color: black;
+           padding-top: 14px;
+           padding-bottom: 14px;
+           padding-left: 14px;
+           cursor: default;
+           text-decoration: none; 
+           letter-spacing: 3px;
+           font-size: 17px;
+           font-weight: 600;
+           font-family: 'Roboto', sans-serif;
+           text-align: center;
+       }
+
+    /* Dropdown Button */
+       .dropbtn {
+           background-color: transparent;
+           border-radius: 5px;
+           margin: 4px;
+           margin-bottom: 0px;
+           color: white;
+           padding: 5px 14px 13px;
+           font-size: 22px;
+           border: none;
+           cursor: default;
+           float: right;
+           position: fixed;
+           box-sizing: border-box;
+           right: 0px;
+           top: 0px;
+           transition: color 0.5s linear;
+        }
+
+   /* Dropdown Content */
+      .dropdown-content {
+           float: right;
+           position: fixed;
+           right: 45px;
+           top: 13px;
+           z-index: -1;
+           opacity: 0;
+           display: block;
+           transition: all 0.7s;
+           margin: 6px;
+           margin-top: 0px;
+           margin-right: 10px;
+      }
+      .dropdown-content a {
+           color: white;
+           padding: 12px 10px;
+           text-decoration: none;
+           display: inline;
+           text-align: center;
+           font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.1em;
+            line-height: 150%;
+            font-size: 15px;
+            font-weight: 400;
+      }
+
+   /* Hover Options */
+      .dropdown:hover  .dropbtn{
+           color: #a6a6a6;
+       }
+       .dropdown:hover .dropdown-content {
+           visibility: visible;
+           z-index: 1;
+           opacity: 1;
+           transition: all 0.7s;
+      }
+      .dropdown:not(:hover) .dropdown-content {
+        z-index: -1;
+        transition: all 0.7s;
+    }
+      .dropdown-content a:hover {
+           color: #a6a6a6;
+           transition: all 0.7s;
+    } 
+
+/* End of Header Bar */    
+
+/* This adjusts the background and overall alignment of components */
+       .bg {
+           width: 100%;
+           height: 100%;
+           background: linear-gradient(225deg, #273062, #edf5ff);
+       }
+
+       body {
+            overflow: hidden;
+       }
+
+/* This adjusts the calendar */
+
+       #calendar {
+            width: 80%;
+            position: absolute;
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+       }
+
+       button.btn-action {
+            position: relative;
+            z-index: 2; 
+            top: -100px;
+            right: -1032px;
+            height: 25px;
+            width: 150px;
+            color: #5e6cb5;
+            font-family: 'Titillium Web', sans-serif;
+            border: none;
+            background-color: white;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            -webkit-box-shadow: 0 10px 20px -5px rgba(145, 150, 160, 0.65);
+            box-shadow: 0 10px 20px -5px rgba(148, 153, 161, 0.65);
+            display: inline;
+            letter-spacing: .5px;
+            align-items: center;
+       }
+
+       button.btn-action:hover {
+            background-color: #454b7e;
+            color: white;
+            transition: all 0.5s ease;
+       }
+
+       button.btn-action:disabled {
+            background-color: #e4e4e4;
+            border-color: #e4e4e4;
+            -webkit-transform: scale(.9);
+            -ms-transform: scale(.9);
+            transform: scale(.9);
+            cursor: not-allowed;
+        }
+
+        button.btn-action.active {
+            background-color: #8696c7;
+            color: #fff;
+        }
+
+ </style>
